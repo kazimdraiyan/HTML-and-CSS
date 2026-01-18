@@ -1,0 +1,210 @@
+@font-face {
+  font-family: Favorit;
+  src: url("assets/fonts/Favorit-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: TTTrailers;
+  src: url("assets/fonts/TTTrailers-DemiBold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+body {
+  background-color: #fcf9ee;
+  font-family: Favorit, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 14vw, 15rem);
+  line-height: 0.9;
+  letter-spacing: -0.08em;
+}
+
+h3 {
+  margin-top: 2vw;
+  font-size: clamp(0.5rem, 4vw, 4rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+#header {
+  margin-top: 8vw;
+  margin-right: 10vw;
+  text-align: right;
+}
+
+#header-subtitle {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
+  gap: 1.75vw;
+}
+
+#banner-images {
+  display: flex;
+  margin-top: 30px;
+  gap: 2.5vw;
+  justify-content: flex-end;
+  margin-right: 10vw;
+}
+
+@media (max-width: 480px) {
+  #banner-images {
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+
+.banner-image {
+  width: 32vw;
+  object-fit: cover;
+  border: 3px solid black;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(0.6rem, 0.85vw, 1.2rem);
+  font-weight: bold;
+}
+
+.text-button {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 10vw;
+}
+
+.text-button span {
+  font-size: clamp(1rem, 1.6vw, 1.5rem);
+  font-weight: bold;
+  float: right;
+}
+
+#marquee {
+  margin: 200px 0;
+  height: clamp(1rem, 7vw, 4rem);
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  background-color: #ddc92a;
+  font-size: 2rem;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 12s linear infinite;
+}
+
+#marquee-track span {
+  margin-right: 0.4em;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+#about-us {
+  margin-left: calc(100% - 76.5vw);
+  margin-bottom: 100px;
+}
+
+#about-us div {
+    display: flex;
+    align-items: center;
+    gap: 15vw;
+}
+
+@media (max-width: 480px) {
+  #about-us div {
+    gap: 8vw;
+  }
+}
+
+.about-us-line {
+  font-size: clamp(1rem, 4vw, 4rem);
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+#about-us #label {
+  font-size: clamp(0.75rem, 1.4vw, 1.5rem);
+  font-weight: bold;
+}
+
+#cards {
+    margin-bottom: 100px;
+    padding-left: calc(100% - 76.5vw);
+    display: flex;
+    gap: 2vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+}
+
+#cards::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+    width: clamp(200px, 22vw, 400px);
+    border: 2px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-shrink: 0;
+    background-color: #e7d6c4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 1.35;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.card-icon {
+    width: clamp(70px, 6vw, 100px);
+}
+
+.card-subtitle {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-title {
+    font-family: TTTrailers, sans-serif;
+    font-size:  clamp(4rem, 7.5vw, 10rem);
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.card-crossed-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.card-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
