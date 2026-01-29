@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="cursor-layer">
+      <div id="cursor-dot-fixed" class="cursor-dot"></div>
+    </div>
+
     <!-- TODO: Is the container useless? -->
     <div id="container">
       <div id="header">
@@ -39,6 +43,7 @@
       <!-- TODO: Implement properly -->
       <div class="text-button">
         <span>EXPLORE</span>
+        <br />
       </div>
 
       <div id="marquee">
@@ -57,49 +62,95 @@
       <div id="about-us">
         <div>
           <span id="label"><u>WHO WE ARE</u></span>
-          <span class="about-us-line">An independent <u>brand</u> of<br /></span>
+          <span class="about-us-line"
+            >An independent <u>brand</u> of<br
+          /></span>
         </div>
-        <span class="about-us-line">urban trekking shoes and accessories<br /></span>
-        <span class="about-us-line">that comes from a convergence of<br /></span>
+        <span class="about-us-line"
+          >urban trekking shoes and accessories<br
+        /></span>
+        <span class="about-us-line"
+          >that comes from a convergence of<br
+        /></span>
         <span class="about-us-line">arts and personalities.</span>
       </div>
 
       <div id="cards">
         <div class="card">
-          <img class="card-image" src="assets/images/shoe_carnera.jpg" alt="CARNERA" />
-          <img class="card-icon" src="assets/icons/unisex_label.svg" alt="UNISEX" />
+          <img
+            class="card-image"
+            src="assets/images/shoe_carnera.jpg"
+            alt="CARNERA"
+          />
+          <img
+            class="card-icon"
+            src="assets/icons/unisex_label.svg"
+            alt="UNISEX"
+          />
           <span class="card-subtitle">SS/20</span>
           <div class="card-title">CARNERA</div>
           <div class="card-crossed-price"><s>€ 240 EUR</s></div>
           <div class="card-price">€ 144 EUR</div>
         </div>
         <div class="card">
-          <img class="card-image" src="assets/images/shoe_cactus.jpg" alt="CACTUS" />
-          <img class="card-icon" src="assets/icons/unisex_label.svg" alt="UNISEX" />
+          <img
+            class="card-image"
+            src="assets/images/shoe_cactus.jpg"
+            alt="CACTUS"
+          />
+          <img
+            class="card-icon"
+            src="assets/icons/unisex_label.svg"
+            alt="UNISEX"
+          />
           <span class="card-subtitle">SS/20</span>
           <div class="card-title">CACTUS</div>
           <div class="card-crossed-price"><s>€ 300 EUR</s></div>
           <div class="card-price">€ 180 EUR</div>
         </div>
         <div class="card">
-          <img class="card-image" src="assets/images/shoe_duran.jpg" alt="DURAN" />
-          <img class="card-icon" src="assets/icons/unisex_label.svg" alt="UNISEX" />
+          <img
+            class="card-image"
+            src="assets/images/shoe_duran.jpg"
+            alt="DURAN"
+          />
+          <img
+            class="card-icon"
+            src="assets/icons/unisex_label.svg"
+            alt="UNISEX"
+          />
           <span class="card-subtitle">SS/20</span>
           <div class="card-title">DURAN</div>
           <div class="card-crossed-price"><s>€ 240 EUR</s></div>
           <div class="card-price">€ 144 EUR</div>
         </div>
         <div class="card">
-          <img class="card-image" src="assets/images/shoe_the_eye.jpg" alt="THE EYE" />
-          <img class="card-icon" src="assets/icons/unisex_label.svg" alt="UNISEX" />
+          <img
+            class="card-image"
+            src="assets/images/shoe_the_eye.jpg"
+            alt="THE EYE"
+          />
+          <img
+            class="card-icon"
+            src="assets/icons/unisex_label.svg"
+            alt="UNISEX"
+          />
           <span class="card-subtitle">SS/20</span>
           <div class="card-title">THE EYE</div>
           <div class="card-crossed-price"><s>€ 240 EUR</s></div>
           <div class="card-price">€ 144 EUR</div>
         </div>
         <div class="card">
-          <img class="card-image" src="assets/images/shoe_the_code.jpg" alt="THE CODE" />
-          <img class="card-icon" src="assets/icons/unisex_label.svg" alt="UNISEX" />
+          <img
+            class="card-image"
+            src="assets/images/shoe_the_code.jpg"
+            alt="THE CODE"
+          />
+          <img
+            class="card-icon"
+            src="assets/icons/unisex_label.svg"
+            alt="UNISEX"
+          />
           <span class="card-subtitle">SS/20</span>
           <div class="card-title">THE CODE</div>
           <div class="card-crossed-price"><s>€ 240 EUR</s></div>
@@ -109,7 +160,74 @@
 
       <div class="text-button">
         <span>SHOP ALL</span>
+        <br />
+      </div>
+
+      <div id="footer">
+        <div id="footer-col-1">
+          <div>
+            SUBSCRIBE TO NEWSLETTER<br /><br />
+            <img
+              class="icon"
+              style="width: clamp(50px, 4vw, 80px)"
+              src="assets/icons/newsletter.svg"
+              alt="NEWSLETTER"
+            />
+          </div>
+          <div>
+            <h6 style="margin-bottom: 6px">SUBSCRIBE TO OUR NEWSLETTER</h6>
+            <input
+              type="text"
+              id="newsletter-input"
+              placeholder="email address"
+            />
+          </div>
+        </div>
+        <div id="footer-col-2">
+          <div>
+            INFO<br /><br />
+            <div class="text-link">FAQ</div>
+            <br />
+            <div class="text-link">RETURNS</div>
+            <br />
+            <div class="text-link">CONTACT</div>
+            <br />
+          </div>
+          <div>CREDITS</div>
+        </div>
+        <div id="footer-col-3">
+          <div>
+            POLICY<br /><br />
+            <div class="text-link">TERMS</div>
+            <br />
+            <div class="text-link">PRIVACY</div>
+            <br />
+            <div class="text-link">COOKIE</div>
+            <br />
+          </div>
+          <div>© 2020 DÉPLACÉ MAISON.</div>
+        </div>
+        <div id="footer-col-4">
+          <!-- TODO: Up button -->
+          <div>UP</div>
+          <div>
+            <div class="icon">
+              <img
+                class="icon"
+                src="assets/icons/facebook.svg"
+                alt="FACEBOOK"
+              />
+              <img
+                class="icon"
+                src="assets/icons/instagram.svg"
+                alt="INSTAGRAM"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
